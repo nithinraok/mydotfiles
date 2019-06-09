@@ -1,0 +1,15 @@
+filetype plugin indent on
+syntax on 
+
+colorscheme slate
+
+" set foldmethod=indent
+" set foldlevel=1
+" set foldclose=all
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set number
+set hls
+set is
+set relativenumber
+
