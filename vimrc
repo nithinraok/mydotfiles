@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'Valloric/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -32,7 +33,8 @@ filetype plugin indent on    " required
 "
 syntax on 
 
-colorscheme slate
+let g:molokai_original = 1
+colorscheme molokai
 
 " set foldmethod=indent
 " set foldlevel=1
@@ -41,6 +43,10 @@ colorscheme slate
 set hls
 set is
 set relativenumber
+set ignorecase
+set smartcase
+set encoding=utf-8
+
 imap <C-q> <esc>:q<cr>
 imap <C-s> <esc>:w<cr>
 nmap <C-s> <esc>:w<cr>
