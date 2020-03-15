@@ -46,7 +46,7 @@ imap <C-s> <esc>:w<cr>
 nmap <C-s> <esc>:w<cr>
 nmap <C-q> <esc>:q<cr>
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
-silent !stty -ixon
+" silent !stty -ixon
 
 " Restore default behaviour when leaving Vim.
 autocmd VimLeave * silent !stty ixon
