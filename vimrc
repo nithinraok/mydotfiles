@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
+set background=dark
 "set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-commentary'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'itchyny/lightline.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,6 +54,16 @@ nmap <C-s> <esc>:w<cr>
 nmap <C-q> <esc>:q<cr>
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
 " silent !stty -ixon
+
+"" UI Config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+set cursorline          " highlight current line
+filetype indent on      " load filetype-specific indent files
+filetype plugin on      " load filetype specific plugin files
+set laststatus=2        " Show the status line at the bottom
+set backspace=indent,eol,start
 
 " Restore default behaviour when leaving Vim.
 autocmd VimLeave * silent !stty ixon
